@@ -1,1 +1,1 @@
-java -jar gruj_vs_sbt-launch-0.12.2.jar
+java -jar gruj_vs_sbt-launch-0.13.0-RC1.jar
