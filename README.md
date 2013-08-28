@@ -9,7 +9,7 @@ Published against SBT 0.11.3, 0.12.x & 0.13.x
 
     resolvers += "Element Releases" at "http://repo.element.hr/nexus/content/repositories/releases/"
 
-    addSbtPlugin("hr.element.xsbt" % "xsbt-sh" % "0.0.1")
+    addSbtPlugin("hr.element.xsbt" % "xsbt-sh" % "0.0.2")
 
 This is a command plugin, so there is no need to add it to your settings, 
 you only need to add it to the project/plugin.sbt file.
@@ -22,4 +22,10 @@ Usage:
     java version "1.7.0_25"
     Java(TM) SE Runtime Environment (build 1.7.0_25-b17)
     Java HotSpot(TM) 64-Bit Server VM (build 23.25-b01, mixed mode)
-    >
+    > sh dir "c:\\Program Files (x86)"
+     Volume in drive C is System
+     Volume Serial Number is 1234-1234
+ 
+     Directory of c:\Program Files (x86)
+     ...
+     
