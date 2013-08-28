@@ -14,8 +14,7 @@ resolvers ++= Seq(
 // | See also: Scala IDE downloads (http://download.scala-ide.org/)                      |
 // +-------------------------------------------------------------------------------------+
 
-// Waiting for 0.13.x!
-// addSbtPlugin("com.typesafe.sbteclipse" % "sbteclipse-plugin" % "2.2.0")
+addSbtPlugin("com.typesafe.sbteclipse" % "sbteclipse-plugin" % "2.3.0")
 
 // +-------------------------------------------------------------------------------------+
 // | Sbt Cross Building Plugin (https://github.com/jrudolph/sbt-cross-building)          |
@@ -23,7 +22,7 @@ resolvers ++= Seq(
 // +-------------------------------------------------------------------------------------+
 
 // Waiting for 0.13.x!
-// addSbtPlugin("net.virtual-void" % "sbt-cross-building" % "0.7.0")
+// addSbtPlugin("net.virtual-void" % "sbt-cross-building" % "0.8.0")
 
 // +-------------------------------------------------------------------------------------+
 // | Tiny XSBT shell plugin (https://github.com/melezov/xsbt-sh)                         |
