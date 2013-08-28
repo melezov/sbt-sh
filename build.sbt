@@ -1,8 +1,10 @@
 sbtPlugin := true
 
+organization := "hr.element.xsbt"
+
 name := "xsbt-sh"
 
-version := "0.0.2-SNAPSHOT"
+version := "0.0.2"
 
 publishTo := Some(
   if (version.value endsWith "SNAPSHOT")
@@ -13,8 +15,8 @@ publishTo := Some(
 
 credentials += Credentials(Path.userHome / ".config" / "xsbt-sh" / "nexus.config")
 
-organization := "hr.element.xsbt"
+scalaVersion := "2.10.2"
+
+// crossBuildingSettings
 
 // CrossBuilding.crossSbtVersions := Seq("0.11.3", "0.12", "0.13")
-
-scalaVersion := "2.10.2"

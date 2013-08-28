@@ -10,9 +10,9 @@ object XsbtShPlugin extends Plugin {
     )
   )
 
-  sealed abstract class OS(val execPrefix: String)
-  case object Windows extends OS("cmd /c ")
-  case object Linux extends OS("")
+  sealed abstract class OS(val execPrefix: String*)
+  case object Windows extends OS("cmd", "/c")
+  case object Linux extends OS()
 
   lazy val OS =
     sys.props.get("os.name") match {
@@ -25,7 +25,7 @@ object XsbtShPlugin extends Plugin {
 
   lazy val shCommand =
     Command.args("sh", "<shell command>") { (state, args) =>
-      OS.execPrefix + (args mkString " ")!;
+      OS.execPrefix ++ args !;
       state
     }
 }
