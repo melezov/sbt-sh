@@ -4,17 +4,11 @@ organization := "hr.element.xsbt"
 
 name := "xsbt-sh"
 
-version := "0.0.2"
+version := "0.1.0"
 
-publishTo <<= version { version => Some(
-  if (version endsWith "SNAPSHOT")
-    "Element Snapshots" at "http://repo.element.hr/nexus/content/repositories/snapshots/"
-  else
-    "Element Releases"  at "http://repo.element.hr/nexus/content/repositories/releases/"
-)}
+publishTo := Some("Element Releases" at "http://repo.element.hr/nexus/content/repositories/releases/")
 
-credentials += Credentials(Path.userHome / ".config" / "xsbt-sh" / "nexus.config")
-
-crossBuildingSettings
-
-CrossBuilding.crossSbtVersions := Seq("0.11.3", "0.12", "0.13")
+credentials ++= {
+  val creds = Path.userHome / ".config" / "xsbt-sh" / "nexus.config"
+  if (creds.exists) Some(Credentials(creds)) else None
+}.toSeq

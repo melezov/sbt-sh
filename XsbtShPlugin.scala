@@ -3,20 +3,20 @@ package hr.element.xsbt
 import sbt._
 import Keys._
 
+import java.util.Locale
+
 object XsbtShPlugin extends Plugin {
   override lazy val settings = Seq(
-    commands ++= Seq(
-      shCommand
-    )
+    commands += shCommand
   )
 
   sealed abstract class OS(val execPrefix: String*)
   case object Windows extends OS("cmd", "/c")
   case object Linux extends OS()
 
-  lazy val OS =
+  lazy val os =
     sys.props.get("os.name") match {
-      case Some(x) if x.toLowerCase contains "windows" =>
+      case Some(x) if x.toLowerCase(Locale.ENGLISH) contains "windows" =>
         Windows
 
       case _ =>
@@ -25,7 +25,7 @@ object XsbtShPlugin extends Plugin {
 
   lazy val shCommand =
     Command.args("sh", "<shell command>") { (state, args) =>
-      OS.execPrefix ++ args !;
+      (os.execPrefix ++ args).!
       state
     }
 }
