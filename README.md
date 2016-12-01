@@ -1,6 +1,7 @@
 #sbt-sh
 
 [![Build Status](https://travis-ci.org/melezov/sbt-sh.svg?branch=master)](https://travis-ci.org/melezov/sbt-sh)
+[![License](https://img.shields.io/badge/license-UNLICENSE-brightgreen.svg)](https://spdx.org/licenses/BSD-3-Clause.html)
 
 ### Tiny plugin which adds functionality to run shell actions from SBT
 
