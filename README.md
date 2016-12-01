@@ -1,5 +1,7 @@
 #sbt-sh
 
+[![Build Status](https://travis-ci.org/melezov/sbt-sh.svg?branch=master)](https://travis-ci.org/melezov/sbt-sh)
+
 ### Tiny plugin which adds functionality to run shell actions from SBT
 
 Published to Bintray against SBT 0.13.x

@@ -1,0 +1,20 @@
+language: scala
+
+scala:
+  - "2.10.6"
+
+jdk:
+  - oraclejdk8
+  - oraclejdk7
+  - openjdk7
+  - openjdk6
+
+sudo: false
+
+notifications:
+  email:
+    recipients:
+      - marko.elezovic@oradian.com
+
+script:
+  - sbt ++$TRAVIS_SCALA_VERSION publishLocal
