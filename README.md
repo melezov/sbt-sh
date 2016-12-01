@@ -4,7 +4,7 @@
 [![License](https://img.shields.io/badge/license-UNLICENSE-brightgreen.svg)](https://spdx.org/licenses/BSD-3-Clause.html)
 [![Codacy](https://api.codacy.com/project/badge/Grade/824f4d9081694914a873ce226f694d70)](https://www.codacy.com/app/melezov/sbt-sh?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=melezov/sbt-sh&amp;utm_campaign=Badge_Grade)
 
-### Tiny plugin which adds functionality to run shell actions from SBT
+### Tiny SBT plugin for running shell actions
 
 Published to Bintray against SBT 0.13.x
 
