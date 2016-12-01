@@ -2,6 +2,7 @@
 
 [![Build Status](https://travis-ci.org/melezov/sbt-sh.svg?branch=master)](https://travis-ci.org/melezov/sbt-sh)
 [![License](https://img.shields.io/badge/license-UNLICENSE-brightgreen.svg)](https://spdx.org/licenses/BSD-3-Clause.html)
+[![Codacy](https://api.codacy.com/project/badge/Grade/824f4d9081694914a873ce226f694d70)](https://www.codacy.com/app/melezov/sbt-sh?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=melezov/sbt-sh&amp;utm_campaign=Badge_Grade)
 
 ### Tiny plugin which adds functionality to run shell actions from SBT
 
@@ -16,11 +17,11 @@ Usage:
 
     [info] Loading project definition from ~\my-project\project
     [info] Set current project to my-project (in build file:/~/my-project/)
-    [my-project] $ sh java -version
+    > sh java -version
     java version "1.8.0_112"
     Java(TM) SE Runtime Environment (build 1.8.0_112-b15)
     Java HotSpot(TM) 64-Bit Server VM (build 25.112-b15, mixed mode)
-    [my-project] $ sh git branch -v
+    > sh git branch -v
       develop 04b6eb8 Fix previous broken fix for foo widget
       master  797ccbe Merge in pull request #1337
 
