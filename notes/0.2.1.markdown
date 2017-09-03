@@ -1,0 +1,5 @@
+Now available for SBT 1.x!
+
+### Changes:
+* Convert into an AutoPlugin with trigger = allRequirements
+* Add SBT cross-building against both 0.13.x and 1.x 

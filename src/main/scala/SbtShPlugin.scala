@@ -2,8 +2,9 @@ package com.oradian.sbt
 
 import sbt._
 
-object SbtShPlugin extends Plugin {
-  override lazy val settings = Seq(
+object SbtShPlugin extends AutoPlugin {
+  override def trigger = allRequirements
+  override def globalSettings = Seq(
     Keys.commands += shCommand
   )
 

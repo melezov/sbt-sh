@@ -1,14 +1,12 @@
-#sbt-sh
+## sbt-sh - tiny SBT plugin for running shell actions
 
 [![Build Status](https://travis-ci.org/melezov/sbt-sh.svg?branch=master)](https://travis-ci.org/melezov/sbt-sh)
 [![License](https://img.shields.io/badge/license-UNLICENSE-brightgreen.svg)](https://spdx.org/licenses/Unlicense.html)
 [![Codacy](https://api.codacy.com/project/badge/Grade/824f4d9081694914a873ce226f694d70)](https://www.codacy.com/app/melezov/sbt-sh?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=melezov/sbt-sh&amp;utm_campaign=Badge_Grade)
 
-### Tiny SBT plugin for running shell actions
+Published to Bintray against SBT 0.13.x and 1.x
 
-Published to Bintray against SBT 0.13.x
-
-    addSbtPlugin("com.oradian.sbt" % "sbt-sh" % "0.2.0")
+    addSbtPlugin("com.oradian.sbt" % "sbt-sh" % "0.2.1")
 
 This is a command plugin, so there is no need to add it to your settings.   
 You only need to add the plugin to your `project/plugin.sbt` file.

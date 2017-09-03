@@ -2,7 +2,9 @@ sbtPlugin := true
 
 organization := "com.oradian.sbt"
 name := "sbt-sh"
-version := "0.2.0"
+version := "0.2.1"
+
+crossSbtVersions := Seq("1.0.1", "0.13.16")
 
 scriptedSettings
 scriptedBufferLog := false
