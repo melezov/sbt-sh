@@ -1,0 +1,5 @@
+The codebase was getting too complex!
+Reduced it down to a couple lines of code.
+
+### Changes:
+* Use sbt.Resolvers.run instead of homegrown runner

@@ -1,0 +1,11 @@
+# create "foo" file
+$ delete foo
+$ delete bar
+$ touch foo
+
+# move it using the "sh" plugin command
+> sh mv foo bar
+
+# check if file was successfully moved
+$ absent foo
+$ exists bar

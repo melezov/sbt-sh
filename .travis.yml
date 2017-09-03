@@ -17,4 +17,4 @@ notifications:
       - marko.elezovic@oradian.com
 
 script:
-  - sbt ++$TRAVIS_SCALA_VERSION publishLocal
+  - sbt ++$TRAVIS_SCALA_VERSION scripted
