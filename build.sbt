@@ -2,7 +2,7 @@ sbtPlugin := true
 
 organization := "com.oradian.sbt"
 name := "sbt-sh"
-version := "0.2.1"
+version := "0.3.0"
 
 crossSbtVersions := Seq("1.0.1", "0.13.16")
 

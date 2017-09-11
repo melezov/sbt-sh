@@ -1,0 +1,5 @@
+Add helpful help
+
+### Changes:
+* Explain the inner workings of OS detecion in help
+* Add a guard against passing in no arguments

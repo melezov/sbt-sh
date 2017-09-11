@@ -6,7 +6,7 @@
 
 Published to Bintray against SBT 0.13.x and 1.x
 
-    addSbtPlugin("com.oradian.sbt" % "sbt-sh" % "0.2.1")
+    addSbtPlugin("com.oradian.sbt" % "sbt-sh" % "0.3.0")
 
 This is a command plugin, so there is no need to add it to your settings.   
 You only need to add the plugin to your `project/plugin.sbt` file.
